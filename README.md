@@ -7,7 +7,7 @@
 
 **Lua**
 
-- `sudo apt install luarocks moonscript`
+- `sudo apt install luarocks libssl-dev`
 
 **Openresty**
 
@@ -19,7 +19,7 @@
 
 **Lapis**
 
-- `luarocks install lapis`
+- `luarocks install lapis moonscript`
 
 # Requirements
 - `luarocks install --server=http://rocks.moonscript.org/manifests/leafo lapis-redis`
@@ -29,7 +29,7 @@
     - clone/update the repo `ssh://git@github.com/threefoldtech/jumpscale_weblibs.git` i.e in `~/code/github/threefoldtech/jumpscale_weblibs`
 
 - Make sure you have a symlink in lapius-wiki/static for weblibc
-  - in lapis-wiki directory `cd static && ln -s ~/code/github/threefoldtech/jumpscale_weblibs/weblibc weblibc`
+  - in lapis-wiki directory `cd static && ln -s ~/code/github/threefoldtech/jumpscale_weblibs/static weblibc`
 
 - Make sure redis is running `service redis-server start`
 
